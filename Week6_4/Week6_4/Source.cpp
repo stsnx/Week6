@@ -14,9 +14,13 @@ void callUnDuplicate(char *p,vector<char> x,int Size)
 			x.push_back(*(p + i));
 		}
 	}
-	for (int i = 0; i < x.size(); i++)
+	for (int j = 0; j < x.size(); j++)
 	{
-		cout << x[i];
+		for (int i = 0; i <= j; i++)
+		{
+			cout << x[i];
+		}
+		cout << endl;
 	}
 }
 int main()
